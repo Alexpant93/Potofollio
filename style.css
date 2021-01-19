@@ -1,0 +1,58 @@
+.container {
+  max-width: 1600px;
+  border: 3px solid #2B3035;
+  padding: 0px;
+}
+.container #bloc-gris {
+  max-height: 100px;
+  height: 100px;
+  background-attachment: white;
+  margin: 0px;
+}
+
+#bloc-bas {
+  margin-top: 2px;
+  padding-top: 180px;
+}
+
+#photo-profil img {
+  max-height: 250px;
+  width: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -83px;
+  margin-bottom: -160px;
+}
+
+.list-group-item {
+  background-color: #2B3035;
+  border: 1px solid white;
+}
+
+.color-blue {
+  background-color: #2B3035;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+.container-flex-box {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: center;
+}
+
+.item {
+  height: 300px;
+  width: 20%;
+  margin: 10px;
+}
+
+.itme:nth-child(2) {
+  flex: 1;
+}
+
+/*# sourceMappingURL=style.css.map */
