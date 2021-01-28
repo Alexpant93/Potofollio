@@ -1,178 +1,193 @@
 <!doctype html>
-
 <html lang="fr">
 
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="ddnonymous">
-
     <title>Portofollio</title>
-
-    <!-- CSS -->
+    <!-- CSS bootstrap only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
 
     <!-- CDN ICON BOOTSTRAP -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <!-- CDN font-awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <!-- FONT IMPORT-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
 
     <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <!-- Jquery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
       crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
       crossorigin="anonymous"></script>
-
   </head>
 
   <body>
-
-    <div class="container">
-      <div class="row">
-        <!-- COL de GUACHE -->
-        <div class="col-md-6">
-          <div id="bloc-gris">
-
-          </div>
-
-          <div id="photo-profil">
-            <img src="img/profil.png" alt="alexander-pantoja">
-          </div>
-
-          <div id="bloc-bas" class="color-blue text-white ">
-            <h2 class="text-center"> Web Front End Developer</h2>
-            <h3 id="nom" class="text-center"> Alexander Pantoja</h3>
-
-            <div id="cordone" class="ps-4 pt-4">
-              <p> <i class="bi bi-inbox"> </i> alexander-pantoja@hotmail.fr
-              </p>
-              <p>
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                  class="bi bi-telephone-fill" viewBox="0 0 16 16">
-                  <path fill-rule="evenodd"
-                    d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
-                </svg> +41 76 822 47 27
-              </p>
-              <p>
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                  class="bi bi-house-door-fill" viewBox="0 0 16 16">
-                  <path
-                    d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z" />
-                </svg> Ch des Rosiers 3 1004 Lausanne
-              </p>
-            </div>
-
-            <!-- BLOC COMPETENCE -->
-            <div id="competence-tech" class="pt-5 px-2">
-              <h4 class="text-center">Compétence Techniques</h4>
-              <ul class="list-group list-group-flush text-center">
-                <li class="list-group-item color-blue">Wordpress
-
-
-
+    <header class="fixed-top">
+      <div class="collapse bg-dark" id="navbarHeader">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8 col-md-7 py-4">
+              <ul class="navbar-nav mb-2">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Profil</a>
                 </li>
-                <li class="list-group-item">HTML5 & CSS3</li>
-                <li class="list-group-item">Bootstrap</li>
-                <li class="list-group-item">Responsive</li>
-                <li class="list-group-item">Github</li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Projets</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">CV</a>
+                </li>
               </ul>
             </div>
-            <!--end-->
+            <div class="col-sm-4 offset-md-1 py-4">
+              <h4 class="text-white">Contact</h4>
 
-            <!-- BLOC Certification -->
-            <div id="certification" class="pt-5 px-2">
-              <h4 class="text-center">Certifications</h4>
-              <ul class="list-group list-group-flush text-center">
-                <li class="list-group-item color-blue">Product Ownwer</li>
-                <li class="list-group-item">Scrum Master</li>
-                <li class="list-group-item">Scaled Scrunm</li>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-white"><i class="bi bi-linkedin"></i></a></li>
+                <li><a href="#" class="text-white">alexander-pantoja@hotmail.fr</a></li>
+                <li><a href="#" class="text-white">076 822 47 27</a></li>
               </ul>
             </div>
-            <!--end-->
-
-            <!-- BLOC Langues -->
-            <div id="certification" class="pt-5 px-2">
-              <h4 class="text-center">Langues</h4>
-              <div class="pb-2 ">
-                <ul class="list-group list-group-flush text-center">
-                  <li class="list-group-item color-blue">Français</li>
-                  <li class="list-group-item">Espagnol</li>
-                  <li class="list-group-item">Anglais</li>
-                </ul>
-              </div>
-            </div>
-            <!--end-->
           </div>
         </div>
-        <!-- END -->
-        <!-- COL de DROITE -->
-        <div class="col-md-6">
-          <div id="experience-pro" class="pt-4">
-            <h3><i class="bi bi-hdd-network"></i> Expérience professionnelles</h3>
-            <div class="titre-exp pt-4">
-              <h5> Developer web front end <i> Publishing Factory</i> </h5>
-              <p> <i>Lausanne 2017 - 2019</i></p>
-              <ul>
-                <li> Intégration et suivis de plus de <b>200</b> landings de ventes</li>
-                <li>Développement de plus de <b>10</b> sites Wordpress</li>
-                <li>Configuration des outils marketing <b>Hotjar</b> <b>Ab Tasty</b></li>
-                <li>Support utilisateur 1 et 2 niveaux</li>
-                <li>Formation de 4 collaborateurs aux outils interne</li>
-                <li>Référent technique, analyse de la faisabukul technique des demandes métiers</li>
-              </ul>
-            </div>
-            <div class="titre-exp pt-4">
-              <h5> Developer web front end <i> Publishing Factory</i> </h5>
-              <p> <i>Lausanne 2017 - 2019</i></p>
-              <ul>
-                <li> Intégration et suivis de plus de <b>200</b> landings de ventes</li>
-                <li>Développement de plus de <b>10</b> sites Wordpress</li>
-                <li>Configuration des outils marketing <b>Hotjar</b> <b>Ab Tasty</b></li>
-                <li>Support utilisateur 1 et 2 niveaux</li>
-                <li>Formation de 4 collaborateurs aux outils interne</li>
-                <li>Référent technique, analyse de la faisabilité technique des demandes métiers</li>
-              </ul>
-            </div>
-            <div></div>
-          </div><!-- END -->
-          <div id="comptence-pro" class="pt-4">
-            <h3><i class="bi bi-tools"></i></i> Compétence professionnelles</h3>
-            <div class="titre-exp pt-4">
-              <h5> Gestion de projet </h5>
-              <p> <i>Accompagnement et suivis des projets marketing dans la création des sites web et des landings de
-                  ventes</i></p>
-            </div>
-            <div class="titre-exp pt-2">
-              <h5> Support utilisateur </h5>
-              <p><i>Répondre aux diverses demandes marketing, aide à la configuration des outils, correction des divers
-                  problèmes d’affichage et de fonctionnalité web.</i></p>
-            </div>
-            <div class="titre-exp pt-2">
-              <h5> Formation </h5>
-              <p> <i>Formation et suivi des nouveaux collaborateurs, référent technique pour les nouvelles demandes</i>
-              </p>
-            </div>
-          </div><!-- END -->
-          <div id="formation-pro" class="pt-4">
-            <h3><i class="bi bi-tools"></i></i> Formation </h3>
-            <div class="titre-exp pt-4">
-              <h5> Diplômé en tant qu’informaticien de gestion </h5>
-              <p> <i> ETML-ES Lausanne 2013-2015</i></p>
-            </div>
-            <div class="titre-exp pt-2">
-              <h5> Diplôme d’études commerciales </h5>
-              <p> <i> Auguste Piccard Lausanne 2010-2013</i></p>
-            </div>
-          </div><!-- END -->
-        </div>
-        <!-- END -->
       </div>
-      <!-- END ROW-->
-    </div><!-- END Container-->
+      <div class="navbar header navbar-dark bg-dark shadow-sm">
+        <div class="container">
+          <a href="#" class="navbar-brand d-flex align-items-center">
+            <strong><img class="logo_large" src="img/logo_large-2.png" alt="alexander-pantoja"></strong>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader"
+            aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </div>
+
+    </header>
+
+    <main>
+      <!-- PART ONE - PROFIL -->
+      <div class="container-profil">
+        <div class="container__card text-center">
+          <img class="card_img"
+            src="https://blush.design/api/download?shareUri=GogksU29R&s=0%7E915b3c&w=800&h=800&fm=png"
+            alt="alexander-pantoja">
+        </div>
+
+        <div class="container__desc text-center">
+          <h2 class="gradient-title bold "> Alexander Pantoja</h2>
+          <h1 class="desc__title ml11">
+            <span class="text-wrapper">
+              <span class="line line1"></span>
+              <span class="letters"> &nbsp&lt; Web Front End Developer &gt; //</span>
+            </span>
+          </h1>
+          <h2 id="content-appear">
+            // Qui je suis ?
+          </h2>
+          <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac hendrerit ante. Donec
+            convallis mollis erat,
+            eget
+            eleifend mauris vulputate non. Duis dapibus purus non est feugiat viverra. Vivamus aliquam finibus finibus.
+            Nullam
+            rutrum placerat quam, at ornare nisl laoreet vitae. Mauris in bibendum est. Nullam euismod nisl quis sodales
+            egestas.
+          </p>
+          <div class="container-button text-center mt-5">
+            <a class="external-link special-font m-4" href="mailto:alexander-pantoja@hotmail.fr" target="">
+              <img class="sm-img " src="./img/contact.svg"> CONTACT
+            </a>
+            <a class="button" href="#"> Réalisations <i class="bi bi-arrow-down-circle"></i></a>
+          </div>
+        </div>
+      </div>
+      <!-- PART-PROFIL END -->
+
+      <!-- PART-COMPETENCE -->
+      <div class="container-skills">
+        <div class="bloc-skills mx-auto">
+          <div class="content-skill bck-skills">
+            <h2 class="special-font-poppins"> // Création Site Web </h2>
+            <p class="special-font">"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur,
+              adipisci velit..."
+              "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is
+              pain..."</p>
+            <img class="img-skills" src="https://img.icons8.com/color/128/000000/wordpress.png" />
+            <img class="img-skills" src="https://img.icons8.com/color/128/000000/html-5.png" />
+            <img class="img-skills" src="https://img.icons8.com/dusk/128/000000/css3.png" />
+            <img class="img-skills" src="https://img.icons8.com/dusk/128/000000/javascript-logo.png" />
+          </div>
+
+          <div class="content-skill text-right bck-skills">
+            <h2 class="special-font-poppins"> Responsive design //</h2>
+            <p class="special-font">"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur,
+              adipisci velit..."
+              "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is
+              pain..."</p>
+            <img class="img-skills" src="https://img.icons8.com/color/128/000000/adobe-photoshop.png" />
+            <img class="img-skills" src="./img/bootstrap.png">
+          </div>
+
+          <div class="content-skill bck-skills">
+            <h2 class="special-font-poppins">// Annimations </h2>
+            <p class="special-font">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur,
+              adipisci velit..."
+              "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is
+              pain..."</p>
+            <img class="img-skills" src="https://img.icons8.com/dusk/128/000000/javascript-logo.png" />
+            <img class="img-skills" src="https://img.icons8.com/dusk/128/000000/css3.png" />
+          </div>
+
+          <div class="content-skill text-right bck-skills">
+            <h2 class="special-font-poppins">Gestion de projet // </h2>
+            <p class="special-font">"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur,
+              adipisci velit..."
+              "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is
+              pain..."</p>
+            <img class="img-skills" src="https://img.icons8.com/color/128/000000/github--v1.png" />
+            <img class="img-skills" src="./img/psmi.png" />
+            <img class="img-skills" src="./img/pspoi.png" />
+            <img class="img-skills" src="./img/sps.png" />
+          </div>
+        </div>
+      </div>
+      <!-- END-PART-COMPETENCE -->
+
+
+
+
+
+
+
+
+    </main>
+
+
+
   </body>
+  <footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+      integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
+      crossorigin="anonymous"></script>
+
+    <script src="js/myscripts.js"></script>
+  </footer>
 
 </html>
