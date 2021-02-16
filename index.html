@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr">
+<html lang="en">
 
   <head>
     <!-- Required meta tags -->
@@ -7,81 +7,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Portofollio</title>
     <!-- CSS bootstrap only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
 
     <!-- CDN ICON BOOTSTRAP -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
     <!-- CDN font-awsome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
     <!-- FONT IMPORT-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
 
-    <!-- JS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <!-- Jquery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
       crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-      crossorigin="anonymous"></script>
   </head>
 
   <body>
-    <header class="fixed-top">
-      <div class="collapse bg-dark" id="navbarHeader">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-8 col-md-7 py-4">
-              <ul class="navbar-nav mb-2">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Profil</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Projets</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Contact</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">CV</a>
-                </li>
-              </ul>
-            </div>
-            <div class="col-sm-4 offset-md-1 py-4">
-              <h4 class="text-white">Contact</h4>
+    <header>
 
-              <ul class="list-unstyled">
-                <li><a href="#" class="text-white"><i class="bi bi-linkedin"></i></a></li>
-                <li><a href="#" class="text-white">alexander-pantoja@hotmail.fr</a></li>
-                <li><a href="#" class="text-white">076 822 47 27</a></li>
-              </ul>
-            </div>
-          </div>
+      <nav class="navbar navbar-expand-lg header">
+        <div class="bg"></div>
+        <div class="bg bg2"></div>
+        <div class="bg bg3"></div>
+        <a class="navbar-brand" href="#"></a><img src="./img/logo_large-2.png" class="logo" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Profil <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#container-skills">Expertise</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Réalisation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">CV</a>
+            </li>
+          </ul>
         </div>
-      </div>
-      <div class="navbar header navbar-dark bg-dark shadow-sm">
-        <div class="container">
-          <a href="#" class="navbar-brand d-flex align-items-center">
-            <strong><img class="logo_large" src="img/logo_large-2.png" alt="alexander-pantoja"></strong>
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader"
-            aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </div>
-      </div>
-
+      </nav>
     </header>
 
     <main>
-      <!-- PART ONE - PROFIL -->
-      <div class="container-profil">
+      <!-- PART-PROFIL -->
+      <div class="container-profil" id="content-profil">
+
         <div class="container__card text-center">
           <img class="card_img"
             src="https://blush.design/api/download?shareUri=GogksU29R&s=0%7E915b3c&w=800&h=800&fm=png"
@@ -89,23 +74,18 @@
         </div>
 
         <div class="container__desc text-center">
-          <h2 class="gradient-title bold "> Alexander Pantoja</h2>
           <h1 class="desc__title ml11">
             <span class="text-wrapper">
               <span class="line line1"></span>
               <span class="letters"> &nbsp&lt; Web Front End Developer &gt; //</span>
             </span>
           </h1>
-          <h2 id="content-appear">
-            // Qui je suis ?
-          </h2>
-          <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac hendrerit ante. Donec
-            convallis mollis erat,
-            eget
-            eleifend mauris vulputate non. Duis dapibus purus non est feugiat viverra. Vivamus aliquam finibus finibus.
-            Nullam
-            rutrum placerat quam, at ornare nisl laoreet vitae. Mauris in bibendum est. Nullam euismod nisl quis sodales
-            egestas.
+          <h2 class="gradient-title font-weight-bold "> Alexander Pantoja</h2>
+          <p class="desc-profil text-justify">
+            Passioné par le domaine du web, je suis toujours à la recherche de nouveau défis. Avec une envie de toujours
+            réaliser
+            des projets qui correspond aux besoin client, je suis à l'écoute des besoins et des défis que propose les
+            clients.
           </p>
           <div class="container-button text-center mt-5">
             <a class="external-link special-font m-4" href="mailto:alexander-pantoja@hotmail.fr" target="">
@@ -114,58 +94,63 @@
             <a class="button" href="#"> Réalisations <i class="bi bi-arrow-down-circle"></i></a>
           </div>
         </div>
+
       </div>
       <!-- PART-PROFIL END -->
 
-      <!-- PART-COMPETENCE -->
-      <div class="container-skills">
-        <div class="bloc-skills mx-auto">
-          <div class="content-skill bck-skills">
-            <h2 class="special-font-poppins"> // Création Site Web </h2>
-            <p class="special-font">"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur,
-              adipisci velit..."
-              "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is
-              pain..."</p>
-            <img class="img-skills" src="https://img.icons8.com/color/128/000000/wordpress.png" />
-            <img class="img-skills" src="https://img.icons8.com/color/128/000000/html-5.png" />
-            <img class="img-skills" src="https://img.icons8.com/dusk/128/000000/css3.png" />
-            <img class="img-skills" src="https://img.icons8.com/dusk/128/000000/javascript-logo.png" />
+      <!-- PART SKILLS -->
+      <div class="container-skills" id="container-skills">
+        <div class="container">
+          <!-- Bloc CMS -->
+          <div class="element">
+            <span class="title-skill">// Web Design</span>
+            <ul>
+              <li>Gestion CMS</li>
+              <li>Création template </li>
+              <li>Configuration Plugins</li>
+              <li>Formations</li>
+            </ul>
+            <img class="img-skills" src="./img/web-design.png">
           </div>
 
-          <div class="content-skill text-right bck-skills">
-            <h2 class="special-font-poppins"> Responsive design //</h2>
-            <p class="special-font">"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur,
-              adipisci velit..."
-              "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is
-              pain..."</p>
-            <img class="img-skills" src="https://img.icons8.com/color/128/000000/adobe-photoshop.png" />
-            <img class="img-skills" src="./img/bootstrap.png">
+          <!-- Bloc Responsive -->
+          <div class="element">
+            <span class="title-skill">// Responsive</span>
+            <ul>
+              <li>Bootstrap</li>
+              <li>Mobil First</li>
+              <li>CSS Grid</li>
+              <li>Testing Navigateurs</li>
+            </ul>
+            <img class="img-skills" src="./img/responsive.png" />
           </div>
 
-          <div class="content-skill bck-skills">
-            <h2 class="special-font-poppins">// Annimations </h2>
-            <p class="special-font">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur,
-              adipisci velit..."
-              "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is
-              pain..."</p>
-            <img class="img-skills" src="https://img.icons8.com/dusk/128/000000/javascript-logo.png" />
-            <img class="img-skills" src="https://img.icons8.com/dusk/128/000000/css3.png" />
+          <div class="element">
+            <span class="title-skill">// Analytics</span>
+            <ul>
+              <li>Hotjar</li>
+              <li>Ab-tasty</li>
+              <li>Add-this</li>
+            </ul>
+            <img class="img-skills" src="./img/analytics.png" />
           </div>
-
-          <div class="content-skill text-right bck-skills">
-            <h2 class="special-font-poppins">Gestion de projet // </h2>
-            <p class="special-font">"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur,
-              adipisci velit..."
-              "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is
-              pain..."</p>
-            <img class="img-skills" src="https://img.icons8.com/color/128/000000/github--v1.png" />
-            <img class="img-skills" src="./img/psmi.png" />
-            <img class="img-skills" src="./img/pspoi.png" />
-            <img class="img-skills" src="./img/sps.png" />
+          <!-- Bloc Gestuion de projet -->
+          <div class="element">
+            <span class="title-skill">// Scrum</span>
+            <ul>
+              <li>Gestion de projet agile</li>
+              <li>Scrum master</li>
+              <li>Product Owner</li>
+              <li>Scaled Scrum</li>
+            </ul>
+            <img class="img-skills" src="./img/scrum.png" />
           </div>
         </div>
       </div>
-      <!-- END-PART-COMPETENCE -->
+
+
+
+
 
 
 
@@ -178,16 +163,31 @@
 
 
 
-  </body>
-  <footer>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
-      integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
-      crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
-      integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
-      crossorigin="anonymous"></script>
 
-    <script src="js/myscripts.js"></script>
-  </footer>
+
+
+    <footer>
+
+
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <!-- JS -->
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+      <script src="js/myscripts.js"></script>
+    </footer>
+
+
+  </body>
 
 </html>

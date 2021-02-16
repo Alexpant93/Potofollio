@@ -3,31 +3,44 @@
 	margin: 0;
 	padding: 0;
 }
+
+// GLOBAL VARIABLE
+$font-nom-poppins :'Poppins', sans-serif;
+$font-tile-elite :'Special Elite', cursive;
+$font-tile-larsseit :"Larsseit", Helvetica, sans-serif;
+$color-green : #72B05A;
+$color-blue : #1D3E74;
+
+// Import Police
 @font-face {
 	font-family: Larsseit;
 	src: url(./Larsseit/Larsseit-Light.otf);
 }
 
-$font-nom-poppins :'Poppins', sans-serif;
-$font-tile-elite :'Special Elite', cursive;
-$font-tile-larsseit :"Larsseit", Helvetica, sans-serif;
-$color-green : #6DC26E;
-$color-blue : #1D3E74;
-
-hr{
-	background: white;
+// CLASS MODIF Menu
+.change-height-menu {
+	min-height: 80px !important;
 }
 
+.opacity {
+	opacity: 0.99;
+	transition: 0.3s;
+}
+
+
+// CLASS DE MODIFICATION
+
+a:hover {
+    text-decoration: none;
+}
 .special-font-poppins {
 	font-family:$font-nom-poppins;
 }
-
 .special-font-color{
 	color: white;
 	font-family: $font-tile-larsseit;
     letter-spacing: 1px;
 }
-
 .external-link {
 	color: black;
 	text-decoration: none;
@@ -36,21 +49,8 @@ hr{
 		color: $color-blue;
 	}
 }
-
-.text-right {
-	text-align: right;
-}
-
 .sm-img {
 	max-width: 40px;
-}
-.opacity {
-	opacity: 0.8;
-	transition: 0.3s;
-}
-
-.bold {
-	font-weight: 700;
 }
 
 .gradient-title {
@@ -62,21 +62,61 @@ hr{
 }
 
 .header {
-	min-height: 160px;
+	min-height: 120px;
 	width: 100%;
-	background: rgb(14,35,84);
 	background: linear-gradient(166deg, rgba(14,35,84,0.8589810924369747) 0%, rgba(9,59,121,1) 22%, rgba(14,37,84,1) 100%);
-	clip-path: polygon(0 0, 100% 0%, 100% 50%, 0 95%);
-}
-
-.logo_large {
-	max-height: 70px;
+	border-bottom: 8px solid $color-green;
+	clip-path: polygon(0 0, 100% 0%, 100% 118%, 0 86%);
 }
 
 // Modification css navbar-link
+
+.bg {
+	animation:slide 3s ease-in-out infinite alternate;
+	background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+	bottom:0;
+	left:-50%;
+	opacity:.5;
+	position:fixed;
+	right:-50%;
+	top:0;
+	z-index:-1;
+}
+
+.bg2 {
+	animation-direction:alternate-reverse;
+	animation-duration:4s;
+}
+
+.bg3 {
+	animation-duration:5s;
+}
+
+.content {
+	background-color:rgba(255,255,255,.8);
+	border-radius:.25em;
+	box-shadow:0 0 .25em rgba(0,0,0,.25);
+	box-sizing:border-box;
+	left:50%;
+	padding:10vmin;
+	position:fixed;
+	text-align:center;
+	top:50%;
+	transform:translate(-50%, -50%);
+}
+
+@keyframes slide {
+	0% {
+    transform:translateX(-25%);
+	}
+	100% {
+    transform:translateX(25%);
+	}
+}
 .navbar-nav {
 	.nav-link {
 		color: white !important;
+		opacity: 0.8;
 		font-size: 20px;
 		letter-spacing: 2px;
 		font-family: $font-nom-poppins !important;
@@ -89,24 +129,30 @@ hr{
 		bottom: 4px;
 	}
 	:hover {
-		color: $color-green !important;
+		color: white !important;
 	}
 }
+
+.logo {
+	max-width: 120px;
+}
+
 .navbar-toggler {
-	margin-bottom: 60px;
+    background: white !important;
+}
+.navbar-toggler-icon {
+background-image: url('https://mdbootstrap.com/img/svg/hamburger4.svg?color=1729B0');
 }
 
 .container-profil {
     margin: auto;
 	display: grid;
 	grid-template-columns: 40% 60%;
-	margin-top: 150px;
+	background-color: #F2F4F4;
 	
-
     .container__card {
 		width: 100%;
 		height: auto;
-		text-align: end;
 		padding: 20px;
 	}
 	.card_img {
@@ -159,6 +205,14 @@ hr{
 	.letters {
 		font-family: $font-tile-elite;
 	}
+
+	.desc-profil {
+		background: #eee;
+		padding: 20px;
+		margin-top: 20px;
+		font-size: 18px;
+		letter-spacing: 1px;
+	}
 }
 
 .container-button{
@@ -166,6 +220,7 @@ hr{
 		height: 20px;
 		width: 40px;
 		padding: 15px;
+		margin-left: 50px;
 		text-decoration: none;
 		background-color: $color-blue;
 		color: white;
@@ -178,99 +233,118 @@ hr{
 	}
 }
 
-.container-projet {
-	margin: auto;
-	margin-top: 120px;
-	padding: 30px;
-	display: grid;
-	grid-template-columns: 1fr;
-	background: linear-gradient(166deg, rgba(14, 35, 84, 0.8589810924) 0%, #093b79 22%, #0e2554 100%);
-	clip-path: polygon(0% 8%,100% 0%, 100% 20%, 100% 80%, 125% 88%, 0% 100%, 0% 80%, 0% 20%);
 
-	.bloc-projet {
-		padding: 60px;
-	}
-	.row {
-	display: flex;
-	flex-wrap: wrap;
-	padding: 0 4px;
-	}
 
-	/* Create two equal columns that sits next to each other */
-	.column {
-	padding: 0 4px;
-	}
-
-	.column img {
-	margin-top: 8px;
-	vertical-align: middle;
-	max-width : 400px;
-	border-radius: 15px;
-	box-shadow: 0px 0px 2px white;
-	}
-}
+//  PART SKILLS
 
 .container-skills {
-	margin: auto;
-	margin-top: 100px;
-	padding: 30px;
-	display: grid;
-	grid-template-columns: 1fr;
+	margin-top: 150px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color:#F2F4F4;;
 
-	.bloc-skills {
-		width: 800px;
-		margin-top: 50px;
-		margin-bottom: 50px;
+	.container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 80%;
+	margin: 20px 0;
+	}
+
+	.img-skills {
+		max-width: 180px;
 	}
 }
 
-.bck-skills {
-	background-color: white;
-	border-radius: 20px;
+.element {
+	border-radius: 12px;
+	min-width: 260px;
+	width: 100%;
+	min-height: 400px;
+	margin: 10px;
 	padding: 20px;
-	margin-bottom: 20px;
-	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.23), 0 10px 40px rgba(0, 0, 0, 0.19);
-}
+	flex-direction: column;
+	overflow: hidden;
+	justify-content: space-around;
+	align-items: center;
+	font-size: 1.1rem;
+	background-color: white;
 
-.img-skills {
-	max-width: 60px;
-}
-
-.container-contact {
-	margin-top: 120px;
-	display: grid;
-	grid-template-columns: 30% 70%;
-
-	.bloc-contact-left{
-	background-image: url(https://blush.design/api/download?shareUri=QPWZPXTBu&s=0%7Efbd2ae&w=800&h=800&fm=png);
-	background-size: cover;
-	height: 600px;
+	.title-skill {
+		font-size: 28px;
+		font-weight: 700;
 	}
 
-	.bloc-contact-right{
-	margin-left: 2px;
-	background-color: $color-blue;
-	height: 600px;
+	ul {
+		list-style-type: none;
+		margin-top: 30px;
+
+	}
+
+	ul li::before {
+		content: url("https://karolnowinski.pl/assets/check-mark.svg");
+		display: inline-block;
+		margin: 0 10px;
+		width: 1em;
+		height: auto;
 	}
 }
+
+.element:hover {
+	background-color :#217CB9;
+	color: white;
+	border: 1px solid transparent !important;
+
+		ul li::before {
+		content: url("https://karolnowinski.pl/assets/check-mark-white.svg");
+	}
+}
+
+
+
 
 
 // Responsive
 
 // Small devices (landscape phones, 576px and down)
 @media (max-width: 576px) { 
+	.navbar-nav {
+		margin-top: 20px;
+		text-align: center;
+	}
 	.container-profil {
 		display: block;
+		padding:20px;
 	}
 	.container__desc {
 		width: auto;
 	}
+	.container__desc .ml11 {
+	font-size: 25px;
+	}
+	.container__card {
+		padding: 0px !important;
+	}
+
+	.container-button .button {
+		margin-left: 0px;
+	}
 }
 
-.bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
+
+@media only screen and (max-width: 1080px) {
+	.container {
+    flex-direction: column;
+	}
+
+	.element {
+    margin: 20px 0;
+	}
+
+	.element:nth-of-type(2) {
+    transform: scale(1);
+	}
+
 }

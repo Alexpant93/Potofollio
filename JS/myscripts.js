@@ -3,8 +3,12 @@ $(function () {
     $(window).scroll(function () {
         if ($(this).scrollTop() > 50) {
             $('header').addClass('opacity')
+            $('header').addClass('fixed-top')
+            $('nav').addClass('change-height-menu')
         } else {
             $('header').removeClass('opacity')
+            $('header').removeClass('fixed-top')
+            $('nav').removeClass('change-height-menu')
         }
     });
 });
@@ -51,10 +55,7 @@ anime.timeline({ duration: 900 })
 
 anime({
     targets: '.container-profil',
-    translateY: [40],
+    translateY: [70],
     opacity: [0.2, 1],
     duration: 4000
 });
-
-
-
