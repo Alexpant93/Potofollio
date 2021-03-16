@@ -4,44 +4,33 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @font-face {
   font-family: Larsseit;
   src: url(./Larsseit/Larsseit-Light.otf);
 }
-.change-height-menu {
-  min-height: 80px !important;
-}
-
-.opacity {
-  opacity: 0.99;
-  transition: 0.3s;
-}
-
 a:hover {
   text-decoration: none;
-}
-
-.special-font-poppins {
-  font-family: "Poppins", sans-serif;
-}
-
-.special-font-color {
   color: white;
-  font-family: "Larsseit", Helvetica, sans-serif;
-  letter-spacing: 1px;
 }
 
 .external-link {
-  color: black;
-  text-decoration: none;
+  padding: 12px 20px;
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  background-color: #F88C46;
+  color: white;
+  letter-spacing: 1px;
 }
 .external-link :hover {
   text-decoration: none;
-  color: #1D3E74;
-}
-
-.sm-img {
-  max-width: 40px;
+  color: white;
+  background-color: white;
+  border: 1px solid white;
 }
 
 .gradient-title {
@@ -52,55 +41,9 @@ a:hover {
   -webkit-background-clip: text;
 }
 
-.header {
-  min-height: 120px;
-  width: 100%;
-  background: linear-gradient(166deg, rgba(14, 35, 84, 0.8589810924) 0%, #093b79 22%, #0e2554 100%);
-  border-bottom: 8px solid #72B05A;
-  clip-path: polygon(0 0, 100% 0%, 100% 118%, 0 86%);
-}
-
-.bg {
-  animation: slide 3s ease-in-out infinite alternate;
-  background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
-  bottom: 0;
-  left: -50%;
-  opacity: 0.5;
-  position: fixed;
-  right: -50%;
-  top: 0;
-  z-index: -1;
-}
-
-.bg2 {
-  animation-direction: alternate-reverse;
-  animation-duration: 4s;
-}
-
-.bg3 {
-  animation-duration: 5s;
-}
-
-.content {
-  background-color: rgba(255, 255, 255, 0.8);
-  border-radius: 0.25em;
-  box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.25);
-  box-sizing: border-box;
-  left: 50%;
-  padding: 10vmin;
-  position: fixed;
-  text-align: center;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-
-@keyframes slide {
-  0% {
-    transform: translateX(-25%);
-  }
-  100% {
-    transform: translateX(25%);
-  }
+.navbar-nav {
+  z-index: 2;
+  background: transparent;
 }
 .navbar-nav .nav-link {
   color: white !important;
@@ -112,50 +55,72 @@ a:hover {
   font-weight: 700;
   margin-right: 20px;
 }
-.navbar-nav .social {
-  position: relative;
-  bottom: 4px;
-}
 .navbar-nav :hover {
-  color: white !important;
-}
-
-.logo {
-  max-width: 120px;
-}
-
-.navbar-toggler {
-  background: white !important;
+  color: black !important;
 }
 
 .navbar-toggler-icon {
   background-image: url("https://mdbootstrap.com/img/svg/hamburger4.svg?color=1729B0");
 }
 
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.carousel-item {
+  height: 102vh;
+  min-height: 800px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.bck-img {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  background-image: url(./img/test.jpg);
+}
+
+.carousel {
+  margin-top: -71px;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-25%);
+  }
+  100% {
+    transform: translateX(25%);
+  }
+}
 .container-profil {
   margin: auto;
-  display: grid;
-  grid-template-columns: 40% 60%;
-  background-color: #F2F4F4;
+  padding: 20px;
 }
 .container-profil .container__card {
   width: 100%;
   height: auto;
   padding: 20px;
 }
-.container-profil .card_img {
-  max-height: auto;
-  width: 50%;
-}
 
 .container__desc {
-  width: 80%;
   height: auto;
-  margin-top: 60px;
+  margin-top: 160px;
 }
-.container__desc .ml11 {
+.container__desc .desc__title {
+  font-family: "Special Elite", cursive;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 50px;
 }
 .container__desc .ml11 .text-wrapper {
   position: relative;
@@ -181,50 +146,25 @@ a:hover {
   display: inline-block;
   line-height: 1em;
 }
-.container__desc h2 {
-  font-size: 30px;
-}
-.container__desc .letters {
-  font-family: "Special Elite", cursive;
-}
 .container__desc .desc-profil {
-  background: #eee;
   padding: 20px;
   margin-top: 20px;
   font-size: 18px;
   letter-spacing: 1px;
 }
-
-.container-button .button {
-  height: 20px;
-  width: 40px;
-  padding: 15px;
-  margin-left: 50px;
-  text-decoration: none;
-  background-color: #1D3E74;
-  color: white;
-  box-shadow: 0px 23px 28px -24px rgba(212, 143, 9, 0.65);
-  border-radius: 20px;
-  background: linear-gradient(166deg, #1c76d1 49%, #409fe6 100%);
-  letter-spacing: 2px;
-  vertical-align: middle;
-  transition: all 0.2s ease;
+.container__desc .logo {
+  max-width: 300px;
 }
 
 .container-skills {
-  margin-top: 150px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #F2F4F4;
-}
-.container-skills .container {
+  max-width: 900px;
+  margin: auto;
+  margin-top: 120px;
+  padding: 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 80%;
-  margin: 20px 0;
+  justify-content: center;
 }
 .container-skills .img-skills {
   max-width: 180px;
@@ -234,12 +174,8 @@ a:hover {
   border-radius: 12px;
   min-width: 260px;
   width: 100%;
-  min-height: 400px;
   margin: 10px;
   padding: 20px;
-  flex-direction: column;
-  overflow: hidden;
-  justify-content: space-around;
   align-items: center;
   font-size: 1.1rem;
   background-color: white;
@@ -259,6 +195,10 @@ a:hover {
   width: 1em;
   height: auto;
 }
+.element .lg-img {
+  max-width: 100%;
+  border-radius: 5px;
+}
 
 .element:hover {
   background-color: #217CB9;
@@ -270,6 +210,13 @@ a:hover {
 }
 
 @media (max-width: 576px) {
+  .navbar {
+    z-index: 3;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+  }
+
   .navbar-nav {
     margin-top: 20px;
     text-align: center;
@@ -295,9 +242,31 @@ a:hover {
   .container-button .button {
     margin-left: 0px;
   }
+
+  #slide-2 {
+    height: 312vh !important;
+  }
+}
+@media (max-width: 768px) {
+  .navbar-nav .nav-link {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .container-profil {
+    display: block;
+  }
+
+  .container__desc {
+    width: 100%;
+  }
+
+  #slide-2 {
+    height: 312vh !important;
+  }
 }
 @media only screen and (max-width: 1080px) {
-  .container {
+  .container-skills {
     flex-direction: column;
   }
 

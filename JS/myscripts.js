@@ -1,17 +1,20 @@
 // Change opacity lors du scrool
-$(function () {
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 50) {
-            $('header').addClass('opacity')
-            $('header').addClass('fixed-top')
-            $('nav').addClass('change-height-menu')
-        } else {
-            $('header').removeClass('opacity')
-            $('header').removeClass('fixed-top')
-            $('nav').removeClass('change-height-menu')
-        }
-    });
-});
+//$(function () {
+//    $(window).scroll(function () {
+//        if ($(this).scrollTop() > 50) {
+//            $('header').addClass('opacity')
+//            $('header').addClass('fixed-top')
+//           $('nav').addClass('change-height-menu')
+//
+//       } else {
+//           $('header').removeClass('opacity')
+//           $('header').removeClass('fixed-top')
+//           $('nav').removeClass('change-height-menu')
+// 
+//        }
+//     });
+//});
+
 
 // Wrap every letter in a span
 var textWrapper = document.querySelector('.ml11 .letters');
@@ -59,3 +62,10 @@ anime({
     opacity: [0.2, 1],
     duration: 4000
 });
+
+
+$('.carousel').carousel({
+    interval: 80000
+})
+
+
