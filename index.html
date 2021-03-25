@@ -39,9 +39,10 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+
           <ul class="navbar-nav">
-            <li class="nav-item active" data-target="#carouselExampleIndicators" data-slide-to="0">
-              <a class="nav-link" href="#">Profil </a>
+            <li class="nav-item active-menu" data-target="#carouselExampleIndicators" data-slide-to="0">
+              <a class="nav-link" href="#">Home </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" data-target="#carouselExampleIndicators" data-slide-to="1">
@@ -58,25 +59,21 @@
                 Contact
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" data-target="#carouselExampleIndicators" data-slide-to="4">
-                CV
-              </a>
-            </li>
           </ul>
+
         </div>
       </nav>
     </header>
     <!-- END NAV -->
 
     <div class="main">
-
       <!-- SLIDER FULL SCREEN -->
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
         </ol>
 
         <!-- CONTENT SLIDER -->
@@ -86,19 +83,25 @@
             <div class="container-profil" id="content-profil">
               <div class="container__desc text-center">
                 <a class="navbar-brand" href="#"></a><img src="./img/logo_large-2.png" class="logo" alt=""></a>
-                <h1 class="desc__title ml11">
+                <h1 class="desc__title ml11 mt-4">
                   <span class="text-wrapper">
                     <span class="line line1"></span>
                     <span class="letters"> &nbsp&lt; Web Front End Developer &gt; //</span>
                   </span>
                 </h1>
-                <h2 class="font-weight-bold "> Alexander Pantoja</h2>
+                <h2 class="font-weight-bold font-elite"> Alexander Pantoja</h2>
+                <span style="font-size: 3em; color: black;">
+                  <a target="_blank" href="https://www.linkedin.com/in/alexander-pantoja-220616a9/"><i
+                      class="fab fa-linkedin"></i></a>
+                  <a target="_blank" href="https://github.com/Alexpant93"><i class="fab fa-github"></i></a>
+                </span>
                 <div class="container-button text-center mt-5">
-                  <a class="external-link special-font m-4" href="mailto:alexander-pantoja@hotmail.fr" target="">
-                    CONTACT
+                  <a class="external-link special-font m-4" href="mailto:alexander-pantoja@hotmail.fr"
+                    data-target="#carouselExampleIndicators" data-slide-to="3">
+                    Contact
                   </a>
                   <a class="external-link special-font m-4" href="mailto:alexander-pantoja@hotmail.fr" target="">
-                    Réalisation
+                    My Work
                   </a>
                 </div>
               </div>
@@ -106,12 +109,8 @@
           </div>
 
           <!-- SLIDER #2 -->
-          <div class="carousel-item bck-img" id="slide-2">
+          <div class="carousel-item bck-img-slide2" id="slide-2">
             <div class="container-skills" id="container-skills">
-              <div class="title">
-                <h2> COMPETENCES</h2>
-              </div>
-
               <!-- Bloc CMS -->
               <div class="element">
                 <p>
@@ -170,6 +169,98 @@
           <div class="carousel-item bck-img" id="slide-3">
 
 
+          </div>
+
+
+          <!-- SLIDER #4 -->
+          <div class="carousel-item bck-img-slide-contact" id="slide-4">
+
+            <!--Section: Contact -->
+            <section id="contact" class="mx-auto">
+              <h1 class="text-center font-elite mt-2"> Alexander Pantoja - Front End Developer</h1>
+
+              <!--Section description-->
+              <div class="row content-form">
+                <!--Grid column-->
+                <div class="col-md-12 mb-md-0 mb-5">
+                  <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+                    <!--Grid row-->
+                    <div class="row">
+                      <!--Grid column-->
+                      <div class="col-md-6">
+                        <div class="md-form mb-0">
+                          <input placeholder="Nom" type="text" id="name" name="name" class="form-control">
+                        </div>
+                      </div>
+                      <!--Grid column-->
+
+                      <!--Grid column-->
+                      <div class="col-md-6">
+                        <div class="md-form mb-0">
+                          <input placeholder="Email" type="text" id="email" name="email" class="form-control">
+                        </div>
+                      </div>
+                      <!--Grid column-->
+
+                    </div>
+                    <!--Grid row-->
+
+                    <!--Grid row Sujet -->
+                    <div class="row mt-2">
+                      <div class="col-md-12">
+                        <div class="md-form mb-0">
+                          <input placeholder="Sujet" type="text" id="subject" name="subject" class="form-control">
+                        </div>
+                      </div>
+                    </div>
+                    <!--Grid row-->
+
+                    <!--Grid row message -->
+                    <div class="row mt-2 mb-2">
+                      <!--Grid column-->
+                      <div class="col-md-12">
+                        <div class="md-form">
+                          <textarea type="text" placeholder="Votre message" id="message" name="message" rows="2"
+                            class="form-control md-textarea"></textarea>
+                        </div>
+                      </div>
+                    </div>
+                    <!--Grid row-->
+
+                  </form>
+
+                  <div class="text-center text-md-left">
+                    <a class="btn btn-primary btn-envoyer"
+                      onclick="document.getElementById('contact-form').submit();">Envoyer</a>
+                  </div>
+                  <div class="status"></div>
+                </div>
+                <!--Grid column-->
+
+
+                <!--Grid column-->
+
+              </div>
+
+              <!--Grid column-->
+              <div class="col-md-12 mt-4 text-center">
+                <ul class="list-unstyled mb-0">
+                  <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                    <p>Lausanne 1004</p>
+                  </li>
+
+                  <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                    <p>+ 76 822 47 27</p>
+                  </li>
+
+                  <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                    <p>alexander-pantoja@hotmail.fr</p>
+                  </li>
+                </ul>
+              </div>
+
+            </section>
+            <!--Section: Contact -->
           </div>
         </div>
         <!-- END CONTENT SLIDER -->
