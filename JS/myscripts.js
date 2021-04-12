@@ -1,19 +1,19 @@
 // Change opacity lors du scrool
-//$(function () {
-//    $(window).scroll(function () {
-//        if ($(this).scrollTop() > 50) {
-//            $('header').addClass('opacity')
-//            $('header').addClass('fixed-top')
-//           $('nav').addClass('change-height-menu')
-//
-//       } else {
-//           $('header').removeClass('opacity')
-//           $('header').removeClass('fixed-top')
-//           $('nav').removeClass('change-height-menu')
-// 
-//        }
-//     });
-//});
+$(function () {
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 50) {
+            $('header').addClass('bck-nav')
+            $('header').addClass('fixed-top')
+            $('nav').addClass('change-height-menu')
+
+        } else {
+            $('header').removeClass('.bck-nav')
+            $('header').removeClass('fixed-top')
+            $('nav').removeClass('change-height-menu')
+
+        }
+    });
+});
 
 
 // Wrap every letter in a span
@@ -57,8 +57,8 @@ anime.timeline({ duration: 900 })
 
 
 anime({
-    targets: '.container-profil',
-    translateY: [70],
+    targets: '.container__desc',
+    translateY: [20],
     opacity: [0.2, 1],
     duration: 4000
 });
@@ -82,3 +82,5 @@ for (var i = 0; i < links.length; i++) {
         this.className += " active-menu";
     });
 }
+
+
