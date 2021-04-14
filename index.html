@@ -69,7 +69,7 @@
 
 
     <div class="main">
-
+      <!-- SECTION PROFIL-->
       <div class="container-profil" id="profil">
         <div class="container__desc text-center">
           <a class="navbar-brand" href="#"></a><img src="./img/logo_large-2.png" class="logo" alt=""></a>
@@ -98,10 +98,12 @@
       </div>
       <!--END SECTION PROFIL-->
 
-
-      <div class="container-skills" id="container-skills">
+      <!-- SECTION COMPETENCE-->
+      <div class="container mt-5" id="container-skills">
+        <h2># EXPERTISE</h2>
+      </div>
+      <div class="container-skills">
         <div class="item-a">
-          <h2># Expertise</h2>
           <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam viverra metus sit amet leo suscipit
             ultrices. Maecenas
             tristique sem et condimentum ornare. Cras sit amet venenatis neque, hendrerit pellentesque velit. Phasellus
@@ -155,21 +157,20 @@
       </div>
       <!--END COMPETENCE-->
 
+      <!-- SECTION REALISATION-->
       <div class="container container-realisation mt-5" id="realisation">
 
-        <h2># Réalisations</h2>
+        <h2># REALISATIONS</h2>
 
         <div id="accordion" class="mt-5">
           <div class="card">
-            <div class="card-header" id="headingOne">
+            <div class="card-header" id="headingOne" data-toggle="collapse" data-target="#collapseOne"
+              aria-expanded="true">
               <h5 class="mb-0">
-                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
-                  aria-controls="collapseOne">
-                  Création Site Vitrine CMS
-                </button>
+                Site Vitrine CMS
               </h5>
+              <label>Wordpress</label>
             </div>
-
             <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
               <div class="card-body">
                 Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
@@ -187,13 +188,12 @@
             </div>
           </div>
           <div class="card">
-            <div class="card-header" id="headingTwo">
+            <div class="card-header collapsed" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo"
+              aria-expanded="false" aria-controls="collapseTwo">
               <h5 class="mb-0">
-                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
-                  aria-expanded="false" aria-controls="collapseTwo">
-                  Site E-commerce
-                </button>
+                Site E-commerce
               </h5>
+              <label>Wordpress / Woocommerce / Stripe</label>
             </div>
             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
               <div class="card-body">
@@ -212,13 +212,12 @@
             </div>
           </div>
           <div class="card">
-            <div class="card-header" id="headingThree">
+            <div class="card-header collapsed" id="headingThree" data-toggle="collapse" data-target="#collapseThree"
+              aria-expanded="false" aria-controls="collapseThree">
               <h5 class="mb-0">
-                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
-                  aria-expanded="false" aria-controls="collapseThree">
-                  Refonte Site Web
-                </button>
+                Refonte Site Web
               </h5>
+              <label>Concret5</label>
             </div>
             <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
               <div class="card-body">
@@ -237,11 +236,15 @@
             </div>
           </div>
         </div>
-
       </div>
+      <!-- END REALISATION-->
 
+      <!-- SECTION SERVICES-->
+      <section id="services" class="container mt-5">
+        <h2># CV</h2>
 
-
+      </section>
+      <!-- END SECTION REALISATION-->
 
       <!--Section: Contact -->
       <section id="contact" class="mx-auto">
@@ -309,38 +312,25 @@
           <!--Grid column-->
 
         </div>
-
-        <!--Grid column-->
-        <div class="col-md-12 mt-4 text-center">
-          <ul class="list-unstyled mb-0">
-            <li>
-              <i class="fas fa-map-marker-alt fa-2x"></i>
-              <p>Lausanne 1004</p>
-            </li>
-
-            <li><i class="fas fa-phone mt-4 fa-2x"></i>
-              <p>+ 76 822 47 27</p>
-            </li>
-
-            <li><i class="fas fa-envelope mt-4 fa-2x"></i>
-              <p>alexander-pantoja@hotmail.fr</p>
-            </li>
-          </ul>
-        </div>
-
       </section>
-
-
-
     </div>
     <!--END MAIN-->
 
 
+    <div class="footer-dark">
+      <footer>
+        <div class="container">
+          <div class="row">
 
-
-
-
-
+            <div class="col-md-12 item social">
+              <a href="https://www.linkedin.com/in/alexander-pantoja-220616a9/">
+                <i class="fab fa-linkedin"></i>
+            </div>
+          </div>
+          <p class="copyright">AP© 2021</p>
+        </div>
+      </footer>
+    </div>
 
     <footer>
       <!-- Optional JavaScript -->
