@@ -23,6 +23,10 @@ $(window).on("scroll touchmove", function () {
     };
 });
 
+// FERMER MENU Mobil
+$('.nav-link').click(function () {
+    $('#navbarNav').collapse('hide');
+});
 
 // ADD CLASS ACTIVE-MENU DEPENDING THE SCROLL SECTION
 $(window).on("scroll touchmove", function () {
