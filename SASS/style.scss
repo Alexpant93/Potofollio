@@ -92,8 +92,6 @@ a:hover {
 		letter-spacing: 2px;
 		font-family: $font-nom-poppins !important;
 		text-transform: uppercase;
-		font-weight: 700;
-		max-width: 160px;
 		text-align: center;
 		margin-right: 20px;
 		margin-left: 20px;
@@ -313,10 +311,6 @@ background-image: url('https://mdbootstrap.com/img/svg/hamburger4.svg?color=1729
 	margin: -20px;
 }
 
-// CONTENT REALISATION
-
-
-
 
 // SLIDE CONTACT
 
@@ -335,18 +329,23 @@ background-image: url('https://mdbootstrap.com/img/svg/hamburger4.svg?color=1729
 
 // Small devices (landscape phones, 576px and down)
 @media (max-width: 576px) { 
+	
 	.navbar {
-		z-index: 3;
-			background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
-		
+		background-color: cadetblue;
+		padding: 0px;
 	}
-
 	.navbar-nav {
 		margin-top: 20px;
 		text-align: center;
 	}
+
+	.navbar-nav .nav-link {
+		margin: auto;
+	}
+	.nav-item {
+		margin-bottom: 4px;
+	}
+
 	.container-profil {
 		display: block;
 		padding:20px;
@@ -361,30 +360,47 @@ background-image: url('https://mdbootstrap.com/img/svg/hamburger4.svg?color=1729
 		padding: 0px !important;
 	}
 
+	.container-skills {
+		display: block;
+	}
+
 	.container-button .button {
 		margin-left: 0px;
 	}
 
-	#slide-2 {
-		height: 312vh !important;
+	.external-link {
+		display: block;
 	}
+
 }
 
 // Medium devices (landscape tablette, 576px)
 @media (max-width: 768px) { 
-	.navbar-nav .nav-link{
-		text-align: center;
-		margin-top: 20px;
-	}
 	.container-profil{
-		display: block;
+		display: flex;
 	}
 	.container__desc{
 		width: 100%;
 	}
 
-	#slide-2 {
-		height: 312vh !important;
+	.container-skills {
+		display: block;
+	}
+
+	.navbar {
+		background-color: cadetblue;
+		padding: 0px;
+	}
+	.navbar-nav {
+		margin-top: 20px;
+		text-align: center;
+	}
+
+	.navbar-nav .nav-link {
+		margin: auto;
+	}
+	.nav-item {
+		margin-bottom: 4px;
 	}
 }
 
@@ -406,9 +422,10 @@ background-image: url('https://mdbootstrap.com/img/svg/hamburger4.svg?color=1729
 
 
 .footer-dark {
-  padding:50px 0;
-  color:#f0f9ff;
-  background-color:#282d32;
+	padding:20px 0;
+	margin-top: 50px;
+	color:#f0f9ff;
+	background-color:#282d32;
 }
 
 
@@ -448,30 +465,30 @@ background-image: url('https://mdbootstrap.com/img/svg/hamburger4.svg?color=1729
 }
 
 .footer-dark .item.social > a {
-  font-size:20px;
-  width:36px;
-  height:36px;
-  line-height:36px;
-  display:inline-block;
-  text-align:center;
-  border-radius:50%;
-  box-shadow:0 0 0 1px rgba(255,255,255,0.4);
-  margin:0 8px;
-  color:#fff;
-  opacity:0.75;
+	font-size:20px;
+	width:36px;
+	height:36px;
+	line-height:36px;
+	display:inline-block;
+	text-align:center;
+	border-radius:50%;
+	box-shadow:0 0 0 1px rgba(255,255,255,0.4);
+	margin:0 8px;
+	color:#fff;
+	opacity:0.75;
 }
 
 .footer-dark .item.social > a:hover {
-  opacity:0.9;
+	opacity:0.9;
 }
 
 .footer-dark .copyright {
 	color: white;
-  text-align:center;
-  padding-top:24px;
-  opacity:0.3;
-  font-size:13px;
-  margin-bottom:0;
+	text-align:center;
+	padding-top:24px;
+	opacity:0.3;
+	font-size:13px;
+	margin-bottom:0;
 }
 
 

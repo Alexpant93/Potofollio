@@ -29,7 +29,6 @@
       crossorigin="anonymous"></script>
   </head>
 
-
   <!-- NAV -->
   <header>
     <nav class="navbar navbar-expand-lg header">
@@ -40,21 +39,23 @@
       <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
 
         <ul class="navbar-nav">
-          <li class="nav-item active-menu" data-target="#carouselExampleIndicators">
-            <a class="nav-link" href="#profil">Home </a>
+          <li class="nav-item active-menu" data-target="#carouselExampleIndicators" id="profil-menu">
+            <a class="nav-link" href="#profil">
+              Home
+            </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#container-skills">
+            <a class="nav-link" href="#container-skills" id="expertise-menu">
               Expertise
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#realisation">
+            <a class="nav-link" href="#realisation" id="realisation-menu">
               Realisation
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contact">
+            <a class="nav-link" href="#contact" id="contact-menu">
               Contact
             </a>
           </li>
@@ -66,7 +67,6 @@
   <!-- END NAV -->
 
   <body>
-
 
     <div class="main">
       <!-- SECTION PROFIL-->
@@ -84,14 +84,15 @@
             <a target="_blank" href="https://www.linkedin.com/in/alexander-pantoja-220616a9/"><i
                 class="fab fa-linkedin"></i></a>
             <a target="_blank" href="https://github.com/Alexpant93"><i class="fab fa-github"></i></a>
+
           </span>
           <div class="container-button text-center mt-5">
-            <a class="external-link special-font m-4" href="mailto:alexander-pantoja@hotmail.fr"
-              data-target="#carouselExampleIndicators" data-slide-to="3">
-              Contact
+            <a class="external-link special-font m-4" target="_blank"
+              href="https://practical-lamarr-5cd241.netlify.app/img/cv.pdf">
+              Mon CV
             </a>
-            <a class="external-link special-font m-4" href="mailto:alexander-pantoja@hotmail.fr" target="">
-              My Work
+            <a href="#realisation" class="external-link special-font m-4">
+              Mon Travail
             </a>
           </div>
         </div>
@@ -239,9 +240,19 @@
       </div>
       <!-- END REALISATION-->
 
-      <!-- SECTION SERVICES-->
-      <section id="services" class="container mt-5">
-        <h2># CV</h2>
+      <!-- SECTION cv contact-->
+      <section id="contact-container" class="container mt-5">
+        <h2 class="text-center"># CV</h2>
+        <div class="qr-code text-center mt-5">
+          <p> Vous pouvez visualiser mon CV grâce a ce Qr-code </p>
+          <img target="_blank" src="img/cv-qrcode.png">
+
+          <p> Vous pouvez également le télécharger </p>
+          <a class="external-link special-font m-4" target="_blank"
+            href="https://practical-lamarr-5cd241.netlify.app/img/cv.pdf">Télécharger mon CV</a>
+        </div>
+
+
 
       </section>
       <!-- END SECTION REALISATION-->
@@ -323,7 +334,7 @@
           <div class="row">
 
             <div class="col-md-12 item social">
-              <a href="https://www.linkedin.com/in/alexander-pantoja-220616a9/">
+              <a target="_blank" href="https://www.linkedin.com/in/alexander-pantoja-220616a9/">
                 <i class="fab fa-linkedin"></i>
             </div>
           </div>
@@ -340,6 +351,7 @@
       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
+      <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>

@@ -1,4 +1,4 @@
-// Change opacity lors du scrool
+// Change the nav opacity lors du scrool
 $(function () {
     $(window).scroll(function () {
         if ($(this).scrollTop() > 50) {
@@ -13,6 +13,53 @@ $(function () {
 
         }
     });
+});
+
+// CHANGE BCK-COLOR
+$(window).on("scroll touchmove", function () {
+    if ($(document).scrollTop() >= $("#container-skills").position().top) {
+        $('body').css('background', "white");
+
+    };
+});
+
+
+// ADD CLASS ACTIVE-MENU DEPENDING THE SCROLL SECTION
+$(window).on("scroll touchmove", function () {
+    if ($(document).scrollTop() >= $("#profil").position().top) {
+        $('#profil-menu').addClass('active-menu')
+        $('#expertise-menu').removeClass('active-menu')
+        $('#realisation-menu').removeClass('active-menu')
+        $('#contact-menu').removeClass('active-menu')
+    };
+});
+
+$(window).on("scroll touchmove", function () {
+    if ($(document).scrollTop() >= $("#container-skills").position().top) {
+        $('#expertise-menu').addClass('active-menu')
+        $('#profil-menu').removeClass('active-menu')
+        $('#realisation-menu').removeClass('active-menu')
+        $('#contact-menu').removeClass('active-menu')
+    };
+});
+
+$(window).on("scroll touchmove", function () {
+    if ($(document).scrollTop() >= $("#realisation").position().top) {
+        $('#realisation-menu').addClass('active-menu')
+        $('#expertise-menu').removeClass('active-menu')
+        $('#profil-menu').removeClass('active-menu')
+        $('#contact-menu').removeClass('active-menu')
+    };
+});
+
+
+$(window).on("scroll touchmove", function () {
+    if ($(document).scrollTop() >= $("#contact-container").position().top) {
+        $('#contact-menu').addClass('active-menu')
+        $('#realisation-menu').removeClass('active-menu')
+        $('#expertise-menu').removeClass('active-menu')
+        $('#profil-menu').removeClass('active-menu')
+    };
 });
 
 

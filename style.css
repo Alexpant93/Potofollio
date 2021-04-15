@@ -81,8 +81,6 @@ a:hover {
   letter-spacing: 2px;
   font-family: "Poppins", sans-serif !important;
   text-transform: uppercase;
-  font-weight: 700;
-  max-width: 160px;
   text-align: center;
   margin-right: 20px;
   margin-left: 20px;
@@ -286,15 +284,21 @@ a:hover {
 
 @media (max-width: 576px) {
   .navbar {
-    z-index: 3;
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
+    background-color: cadetblue;
+    padding: 0px;
   }
 
   .navbar-nav {
     margin-top: 20px;
     text-align: center;
+  }
+
+  .navbar-nav .nav-link {
+    margin: auto;
+  }
+
+  .nav-item {
+    margin-bottom: 4px;
   }
 
   .container-profil {
@@ -314,30 +318,47 @@ a:hover {
     padding: 0px !important;
   }
 
+  .container-skills {
+    display: block;
+  }
+
   .container-button .button {
     margin-left: 0px;
   }
 
-  #slide-2 {
-    height: 312vh !important;
+  .external-link {
+    display: block;
   }
 }
 @media (max-width: 768px) {
-  .navbar-nav .nav-link {
-    text-align: center;
-    margin-top: 20px;
-  }
-
   .container-profil {
-    display: block;
+    display: flex;
   }
 
   .container__desc {
     width: 100%;
   }
 
-  #slide-2 {
-    height: 312vh !important;
+  .container-skills {
+    display: block;
+  }
+
+  .navbar {
+    background-color: cadetblue;
+    padding: 0px;
+  }
+
+  .navbar-nav {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .navbar-nav .nav-link {
+    margin: auto;
+  }
+
+  .nav-item {
+    margin-bottom: 4px;
   }
 }
 @media only screen and (max-width: 1080px) {
@@ -354,7 +375,8 @@ a:hover {
   }
 }
 .footer-dark {
-  padding: 50px 0;
+  padding: 20px 0;
+  margin-top: 50px;
   color: #f0f9ff;
   background-color: #282d32;
 }
